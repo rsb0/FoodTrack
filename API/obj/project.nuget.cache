@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CBZm75v2+AcD/CuPSFkUHubin8K13NFX6umzl7Hdkr3OYcDYg8dLIfXNaP8ZD+kL46h9ncrS2ZNHE08xXok/ag==",
+  "dgSpecHash": "+Q/r7uKb+RGEaTlLT749Lp2TFEu4NHF9Ilzqfte1vOq6U0u690a32fmtt28e6O5LpOIKvXLo5HBLnJYXIEQfww==",
   "success": true,
-  "projectFilePath": "c:\\src\\Reactivites\\API\\API.csproj",
+  "projectFilePath": "C:\\src\\Reactivites\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rune_\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Rune_\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
