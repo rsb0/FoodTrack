@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CeFm3xrWU15QHQaAKcK2e+p5JaiRrYmupZ9HRR9ClylsoH/wRmHcxZHKzBAK0wE/ku2zMV17uX3mYkvIjztX6g==",
+  "dgSpecHash": "0jB8R4k84MsxeWJ8l+0pPyI/1UyNYUAf6ErYgJ60uJE/AO2nibX04F6vV+f/G6swV5e9j8zvWIJJAJhy+9HfCQ==",
   "success": true,
   "projectFilePath": "C:\\src\\Reactivites\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Rune_\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
+    "C:\\Users\\Rune_\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.1.0\\mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Rune_\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Rune_\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Rune_\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.7\\microsoft.data.sqlite.core.3.1.7.nupkg.sha512",
