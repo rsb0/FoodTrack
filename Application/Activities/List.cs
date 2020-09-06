@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Domain;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Persistence;
 
 namespace Application.Activities
@@ -15,7 +17,7 @@ namespace Application.Activities
         public class Handler : IRequestHandler<Query, List<Activity>>
         {
             private readonly DataContext _context;
-            public Handler(DataContext context)
+            public Handler(DataContext context, ILogger<List> logger)
             {
                 _context = context;
             }
@@ -24,7 +26,7 @@ namespace Application.Activities
             {
                 var activites = await _context.Activities.ToListAsync();
 
-                return activites; 
+                return activites;
             }
         }
     }
