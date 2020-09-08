@@ -1,8 +1,9 @@
 import { IActivity } from './../models/activity';
-import axios from 'axios';
-import { request } from 'http';
+import axios, { AxiosResponse } from 'axios';
 
 // File for defining api calls
+
+
 // set baseURL
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
@@ -19,7 +20,7 @@ const requests = {
 
 // Activities object for our activies requests
 const Activities = {
-    list: () => requests.get('/activities'),
+    list: (): Promise<IActivity[]> => requests.get('/activities'),
     details: (id: string) => requests.get(`/activities/${id}`),
     create: (activity: IActivity) => requests.post('/activities', activity),
     update: (activity: IActivity) => requests.put(`/activities/${activity.id}`, activity),
