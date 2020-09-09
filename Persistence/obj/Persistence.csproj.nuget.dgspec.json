@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\src\\Reactivites\\Persistence\\Persistence.csproj": {}
+    "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "c:\\src\\Reactivites\\Domain\\Domain.csproj": {
+    "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\src\\Reactivites\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\src\\Reactivites\\Domain\\Domain.csproj",
+        "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "c:\\src\\Reactivites\\Domain\\obj\\",
+        "outputPath": "C:\\src\\Reactivites\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,14 +56,14 @@
         }
       }
     },
-    "c:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
+    "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\src\\Reactivites\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\src\\Reactivites\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "c:\\src\\Reactivites\\Persistence\\obj\\",
+        "outputPath": "C:\\src\\Reactivites\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,8 +79,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "c:\\src\\Reactivites\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\src\\Reactivites\\Domain\\Domain.csproj"
+              "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj"
               }
             }
           }
