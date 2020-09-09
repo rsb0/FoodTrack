@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\Reactivites\\Application\\Application.csproj": {}
+    "c:\\src\\Reactivites\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\src\\Reactivites\\Application\\Application.csproj": {
+    "c:\\src\\Reactivites\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Reactivites\\Application\\Application.csproj",
+        "projectUniqueName": "c:\\src\\Reactivites\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\src\\Reactivites\\Application\\Application.csproj",
+        "projectPath": "c:\\src\\Reactivites\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Reactivites\\Application\\obj\\",
+        "outputPath": "c:\\src\\Reactivites\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj"
+              "c:\\src\\Reactivites\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\src\\Reactivites\\Domain\\Domain.csproj"
               },
-              "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj"
+              "c:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
+                "projectPath": "c:\\src\\Reactivites\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
+    "c:\\src\\Reactivites\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\src\\Reactivites\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
+        "projectPath": "c:\\src\\Reactivites\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Reactivites\\Domain\\obj\\",
+        "outputPath": "c:\\src\\Reactivites\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,14 +121,14 @@
         }
       }
     },
-    "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
+    "c:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "c:\\src\\Reactivites\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj",
+        "projectPath": "c:\\src\\Reactivites\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Reactivites\\Persistence\\obj\\",
+        "outputPath": "c:\\src\\Reactivites\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -144,8 +144,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj"
+              "c:\\src\\Reactivites\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\src\\Reactivites\\Domain\\Domain.csproj"
               }
             }
           }

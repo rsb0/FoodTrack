@@ -1264,11 +1264,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\Reactivites\\API\\API.csproj",
+      "projectUniqueName": "c:\\src\\Reactivites\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\src\\Reactivites\\API\\API.csproj",
+      "projectPath": "c:\\src\\Reactivites\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\Reactivites\\API\\obj\\",
+      "outputPath": "c:\\src\\Reactivites\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1284,8 +1284,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\src\\Reactivites\\Application\\Application.csproj": {
-              "projectPath": "C:\\src\\Reactivites\\Application\\Application.csproj"
+            "c:\\src\\Reactivites\\Application\\Application.csproj": {
+              "projectPath": "c:\\src\\Reactivites\\Application\\Application.csproj"
             }
           }
         }

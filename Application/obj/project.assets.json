@@ -1377,11 +1377,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\Reactivites\\Application\\Application.csproj",
+      "projectUniqueName": "c:\\src\\Reactivites\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\src\\Reactivites\\Application\\Application.csproj",
+      "projectPath": "c:\\src\\Reactivites\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\Reactivites\\Application\\obj\\",
+      "outputPath": "c:\\src\\Reactivites\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1397,11 +1397,11 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj"
+            "c:\\src\\Reactivites\\Domain\\Domain.csproj": {
+              "projectPath": "c:\\src\\Reactivites\\Domain\\Domain.csproj"
             },
-            "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj"
+            "c:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
+              "projectPath": "c:\\src\\Reactivites\\Persistence\\Persistence.csproj"
             }
           }
         }

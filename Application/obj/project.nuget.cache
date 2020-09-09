@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0jB8R4k84MsxeWJ8l+0pPyI/1UyNYUAf6ErYgJ60uJE/AO2nibX04F6vV+f/G6swV5e9j8zvWIJJAJhy+9HfCQ==",
+  "dgSpecHash": "8AFd+N6zc/Mr0qe+71hFyJK5pPkQdcS8pXfhfhzXZCzAkr4K6mMl8Nj9s7gEM25OfrxaH1reMBbQhmuPmtTXqA==",
   "success": true,
-  "projectFilePath": "C:\\src\\Reactivites\\Application\\Application.csproj",
+  "projectFilePath": "c:\\src\\Reactivites\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rune_\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
     "C:\\Users\\Rune_\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.1.0\\mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
