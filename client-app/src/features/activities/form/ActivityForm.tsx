@@ -1,19 +1,21 @@
 import React, { useState, FormEvent, useContext } from "react";
 import { Segment, Form, Button } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
-import ActivityStore from '../../../app/stores/activityStore';
-import {v4 as uuid} from 'uuid';
+import ActivityStore from "../../../app/stores/activityStore";
+import { v4 as uuid } from "uuid";
 
 interface IProps {
   activity: IActivity;
 }
 
-const ActivityForm: React.FC<IProps> = ({
-  activity: initialFormState,
-}) => {
-
+const ActivityForm: React.FC<IProps> = ({ activity: initialFormState }) => {
   const activityStore = useContext(ActivityStore);
-  const { createActivity, editActivity, submitting, cancelFormOpen } = activityStore;
+  const {
+    createActivity,
+    editActivity,
+    submitting,
+    cancelFormOpen,
+  } = activityStore;
 
   const initializeForm = () => {
     if (initialFormState) {
@@ -37,11 +39,11 @@ const ActivityForm: React.FC<IProps> = ({
     if (activity.id.length === 0) {
       let newActivity = {
         ...activity,
-        id: uuid()
-      }
-      createActivity(newActivity)
+        id: uuid(),
+      };
+      createActivity(newActivity);
     } else {
-      editActivity(activity)
+      editActivity(activity);
     }
   };
 
@@ -93,7 +95,13 @@ const ActivityForm: React.FC<IProps> = ({
           placeholder="Venue"
           value={activity.venue}
         />
-        <Button loading={submitting} floated="left" positive type="submit" content="Submit" />
+        <Button
+          loading={submitting}
+          floated="left"
+          positive
+          type="submit"
+          content="Submit"
+        />
         <Button
           onClick={cancelFormOpen}
           floated="left"

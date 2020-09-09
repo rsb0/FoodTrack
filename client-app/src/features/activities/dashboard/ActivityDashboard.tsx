@@ -6,8 +6,7 @@ import ActivityForm from "../form/ActivityForm";
 import ActivityStore from "../../../app/stores/activityStore";
 import { observer } from "mobx-react-lite";
 
-
-const ActivityDashboard: React.FC= () => {
+const ActivityDashboard: React.FC = () => {
   const activityStore = useContext(ActivityStore);
   const { editMode, selectedActivity } = activityStore;
   return (
@@ -16,9 +15,7 @@ const ActivityDashboard: React.FC= () => {
         <ActivityList />
       </GridColumn>
       <Grid.Column width={6}>
-        {selectedActivity && !editMode && (
-          <ActivityDetails />
-        )}
+        {selectedActivity && !editMode && <ActivityDetails />}
         {editMode && (
           <ActivityForm
             key={selectedActivity && (selectedActivity.id || 0)}
