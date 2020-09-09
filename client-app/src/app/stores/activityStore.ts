@@ -1,6 +1,6 @@
 import { IActivity } from "./../models/activity";
 import { observable, action, computed } from "mobx";
-import { createContext } from "react";
+import { createContext, SyntheticEvent } from "react";
 import agent from "../api/agent";
 
 class ActivityStore {
@@ -10,6 +10,7 @@ class ActivityStore {
   @observable loadingInitial = false;
   @observable editMode = false;
   @observable submitting = false;
+  @observable buttonTarget = '';
 
   // computed properties are used when we already have the data inside the
   // store and know what the result should be based on the data in the store.
@@ -58,6 +59,21 @@ class ActivityStore {
       this.submitting = false;
     } catch (error) {
       this.submitting = false;
+      console.log(error);
+    }
+  }
+
+  @action deleteActivity = async (event: SyntheticEvent<HTMLButtonElement>, id: string) => {
+    this.submitting = true;
+    this.buttonTarget = event.currentTarget.name;
+    try {
+      await agent.Activities.delete(id);
+      this.activityRegistry.delete(id);
+      this.submitting = false;
+      this.buttonTarget = '';
+    } catch (error) {
+      this.submitting = false;
+      this.buttonTarget = '';
       console.log(error);
     }
   }
