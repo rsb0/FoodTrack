@@ -1,22 +1,31 @@
-import React, { useState, FormEvent, useContext } from "react";
+import React, { useState, FormEvent, useContext, useEffect } from "react";
 import { Segment, Form, Button } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
 import ActivityStore from "../../../app/stores/activityStore";
 import { v4 as uuid } from "uuid";
 import { observer } from "mobx-react-lite";
+import { RouteComponentProps } from "react-router-dom";
 
-interface IProps {
-  activity: IActivity;
+interface detailsParams {
+  id: string
 }
 
-const ActivityForm: React.FC<IProps> = ({ activity: initialFormState }) => {
+const ActivityForm: React.FC<RouteComponentProps<detailsParams>> = ({match}) => {
   const activityStore = useContext(ActivityStore);
   const {
     createActivity,
     editActivity,
     submitting,
     cancelFormOpen,
+    activity: initialFormState,
+    loadActivity
   } = activityStore;
+
+  useEffect(() => {
+    if (match.params.id) {
+      loadActivity(match.params.id)
+    }
+  })
 
   const initializeForm = () => {
     if (initialFormState) {
