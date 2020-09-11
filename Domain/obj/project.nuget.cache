@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ANkXlb8NfzzYCfZIOekw3Bstzj7FX6tvsN5CFkUn7vI80eCJPnCIYrD+tYQD6a8mFYxKGzqjF6LZfJ4rVXyxrA==",
+  "dgSpecHash": "vroj8l1Mzo42ndZGdKNK0K4vNPCoZpajObG2i+Re6eVReYqAczFl/0Egu5lEgl+suiVZzdXIgNT4q1HSSP/VBA==",
   "success": true,
-  "projectFilePath": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

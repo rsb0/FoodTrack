@@ -1,35 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\Reactivites\\Application\\Application.csproj": {}
+    "D:\\runesb\\SocialNetwork\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\src\\Reactivites\\Application\\Application.csproj": {
+    "D:\\runesb\\SocialNetwork\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Reactivites\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\runesb\\SocialNetwork\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\src\\Reactivites\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Reactivites\\Application\\obj\\",
+        "projectPath": "D:\\runesb\\SocialNetwork\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\XR-Lab-03\\.nuget\\packages\\",
+        "outputPath": "D:\\runesb\\SocialNetwork\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\XR-Lab-03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj"
+              "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj"
               },
-              "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj"
+              "D:\\runesb\\SocialNetwork\\Persistence\\Persistence.csproj": {
+                "projectPath": "D:\\runesb\\SocialNetwork\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -67,22 +69,24 @@
         }
       }
     },
-    "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
+    "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Reactivites\\Domain\\obj\\",
+        "projectPath": "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\XR-Lab-03\\.nuget\\packages\\",
+        "outputPath": "D:\\runesb\\SocialNetwork\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\XR-Lab-03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -117,29 +121,31 @@
         }
       }
     },
-    "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
+    "D:\\runesb\\SocialNetwork\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "D:\\runesb\\SocialNetwork\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Reactivites\\Persistence\\obj\\",
+        "projectPath": "D:\\runesb\\SocialNetwork\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\XR-Lab-03\\.nuget\\packages\\",
+        "outputPath": "D:\\runesb\\SocialNetwork\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\XR-Lab-03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj"
+              "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj"
               }
             }
           }

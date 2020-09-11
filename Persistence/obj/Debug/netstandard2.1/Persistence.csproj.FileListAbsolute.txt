@@ -10,3 +10,15 @@ C:\src\Reactivites\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CoreC
 C:\src\Reactivites\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CopyComplete
 C:\src\Reactivites\Persistence\obj\Debug\netstandard2.1\Persistence.dll
 C:\src\Reactivites\Persistence\obj\Debug\netstandard2.1\Persistence.pdb
+D:\runesb\SocialNetwork\Persistence\bin\Debug\netstandard2.1\Persistence.deps.json
+D:\runesb\SocialNetwork\Persistence\bin\Debug\netstandard2.1\Persistence.dll
+D:\runesb\SocialNetwork\Persistence\bin\Debug\netstandard2.1\Persistence.pdb
+D:\runesb\SocialNetwork\Persistence\bin\Debug\netstandard2.1\Domain.dll
+D:\runesb\SocialNetwork\Persistence\bin\Debug\netstandard2.1\Domain.pdb
+D:\runesb\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.csprojAssemblyReference.cache
+D:\runesb\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfoInputs.cache
+D:\runesb\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfo.cs
+D:\runesb\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CoreCompileInputs.cache
+D:\runesb\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CopyComplete
+D:\runesb\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.dll
+D:\runesb\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.pdb

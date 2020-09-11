@@ -7,3 +7,12 @@ C:\src\Reactivites\Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfo.cs
 C:\src\Reactivites\Domain\obj\Debug\netstandard2.1\Domain.csproj.CoreCompileInputs.cache
 C:\src\Reactivites\Domain\obj\Debug\netstandard2.1\Domain.dll
 C:\src\Reactivites\Domain\obj\Debug\netstandard2.1\Domain.pdb
+D:\runesb\SocialNetwork\Domain\bin\Debug\netstandard2.1\Domain.deps.json
+D:\runesb\SocialNetwork\Domain\bin\Debug\netstandard2.1\Domain.dll
+D:\runesb\SocialNetwork\Domain\bin\Debug\netstandard2.1\Domain.pdb
+D:\runesb\SocialNetwork\Domain\obj\Debug\netstandard2.1\Domain.csprojAssemblyReference.cache
+D:\runesb\SocialNetwork\Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfoInputs.cache
+D:\runesb\SocialNetwork\Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfo.cs
+D:\runesb\SocialNetwork\Domain\obj\Debug\netstandard2.1\Domain.csproj.CoreCompileInputs.cache
+D:\runesb\SocialNetwork\Domain\obj\Debug\netstandard2.1\Domain.dll
+D:\runesb\SocialNetwork\Domain\obj\Debug\netstandard2.1\Domain.pdb

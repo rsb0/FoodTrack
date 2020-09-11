@@ -10,21 +10,19 @@ interface DetailParams {
   id: string
 }
 
-const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({match, history}) => {
+const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({ match, history }) => {
   const activityStore = useContext(ActivityStore);
   const {
     activity,
-    openEditForm,
-    cancelSelectedActivity,
     loadActivity,
     loadingInitial
   } = activityStore;
 
   useEffect(() => {
     loadActivity(match.params.id)
-  }, [loadActivity])
+  }, [loadActivity, match.params.id])
 
-  if (loadingInitial || !activity) return <LoadingComponent content='Loading activity...'/>
+  if (loadingInitial || !activity) return <LoadingComponent content='Loading activity...' />
 
   return (
     <Card fluid>
@@ -49,7 +47,7 @@ const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({match, hi
             content="Edit"
           />
           <Button
-            onClick={() => history.push('/')}
+            onClick={() => history.push('/activities')}
             basic
             color="grey"
             content="Cancel"

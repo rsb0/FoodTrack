@@ -8,24 +8,26 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Rune_\\.nuget\\packages\\": {}
+    "C:\\Users\\XR-Lab-03\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\src\\Reactivites\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "c:\\src\\Reactivites\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-      "outputPath": "c:\\src\\Reactivites\\Domain\\obj\\",
+      "projectPath": "D:\\runesb\\SocialNetwork\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\XR-Lab-03\\.nuget\\packages\\",
+      "outputPath": "D:\\runesb\\SocialNetwork\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\XR-Lab-03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
