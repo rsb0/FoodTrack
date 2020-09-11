@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 interface DetailParams {
   id: string
 }
-
+// comments
 const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({ match, history }) => {
   const activityStore = useContext(ActivityStore);
   const {
