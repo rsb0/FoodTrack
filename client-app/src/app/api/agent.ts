@@ -7,6 +7,10 @@ import axios, { AxiosResponse } from 'axios';
 // set baseURL
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
+axios.interceptors.response.use(undefined, error => {
+    
+})
+
 // Store request in a constant
 const responseBody = (response: AxiosResponse) => response.data;
 
