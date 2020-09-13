@@ -8,13 +8,11 @@ import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "./app/layout/ScrollToTop";
 
 ReactDOM.render(
-  <React.StrictMode>
     <BrowserRouter>
       <ScrollToTop>
         <App />
       </ScrollToTop>
-    </BrowserRouter>
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById("root")
 );
 
