@@ -20,9 +20,6 @@ const ActivityDashboard: React.FC = () => {
       <GridColumn width={10}>
         <ActivityList />
       </GridColumn>
-      <Grid.Column width={6}>
-        <h2>Activity filter</h2>
-      </Grid.Column>
     </Grid>
   );
 };

@@ -18,7 +18,7 @@ const activityImageTextStyle = {
 };
 
 const ActivityDetailedHeader: React.FC<{activity: IActivity}> = ({activity}) => {
-    const date = activity.date.split('T')[0].toString() + " at " + activity.date.split('T')[1].toString(); 
+    const date = activity.date.split('T')[0].toString(); 
   return (
     <Segment.Group>
       <Segment basic attached="top" style={{ padding: "0" }}>
@@ -37,19 +37,16 @@ const ActivityDetailedHeader: React.FC<{activity: IActivity}> = ({activity}) => 
                   style={{ color: "white" }}
                 />
                 <p>{date}</p>
-                <p>
-                  Hosted by <strong>Bob</strong>
-                </p>
+                
               </Item.Content>
             </Item>
           </Item.Group>
         </Segment>
       </Segment>
       <Segment clearing attached="bottom">
-        <Button color="teal">Join Activity</Button>
-        <Button>Cancel attendance</Button>
-        <Button color="orange" floated="right">
-          Manage Event
+        <Button color="teal">Edit Activity</Button>
+        <Button color="red" floated="right">
+          Delete Activity
         </Button>
       </Segment>
     </Segment.Group>

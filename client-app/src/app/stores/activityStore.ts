@@ -1,4 +1,5 @@
-import { IActivity } from "./../models/activity";
+import { IActivity } from "../models/activity";
+import {IFood} from "../models/food";
 import { observable, action, computed, configure, runInAction } from "mobx";
 import { createContext, SyntheticEvent } from "react";
 import agent from "../api/agent";
@@ -9,6 +10,8 @@ class ActivityStore {
   @observable activityRegistry = new Map();
   @observable activities: IActivity[] = [];
   @observable activity: IActivity | null = null;
+  @observable foods: IFood[] = [];
+  @observable food: IFood | null = null;
   @observable loadingInitial = false;
   @observable submitting = false;
   @observable buttonTarget = "";
@@ -22,7 +25,6 @@ class ActivityStore {
     );
   }
 
-  // lecture 110
   groupActivitiesByDate(activities: IActivity[]) {
     const sortedActivities = activities.sort(
       (a, b) => Date.parse(a.date) - Date.parse(b.date)
@@ -53,6 +55,8 @@ class ActivityStore {
       console.log(error);
     }
   };
+
+
 
   @action loadActivity = async (id: string) => {
     let activity = this.getActivity(id);

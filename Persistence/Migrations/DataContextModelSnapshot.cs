@@ -25,9 +25,6 @@ namespace Persistence.Migrations
                     b.Property<string>("Category")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("City")
-                        .HasColumnType("TEXT");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
@@ -35,9 +32,6 @@ namespace Persistence.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Venue")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -57,22 +51,22 @@ namespace Persistence.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("calories")
+                    b.Property<float>("calories")
                         .HasColumnType("REAL");
 
-                    b.Property<double>("fat")
+                    b.Property<float>("fat")
                         .HasColumnType("REAL");
 
-                    b.Property<double>("fiber")
+                    b.Property<float>("fiber")
                         .HasColumnType("REAL");
 
-                    b.Property<double>("protein")
+                    b.Property<float>("protein")
                         .HasColumnType("REAL");
 
-                    b.Property<double>("starch")
+                    b.Property<float>("starch")
                         .HasColumnType("REAL");
 
-                    b.Property<double>("sugar")
+                    b.Property<float>("sugar")
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");

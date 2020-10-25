@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistence.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class initialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,11 +13,9 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     Title = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true),
                     Category = table.Column<string>(nullable: true),
-                    Date = table.Column<DateTime>(nullable: false),
-                    City = table.Column<string>(nullable: true),
-                    Venue = table.Column<string>(nullable: true)
+                    Description = table.Column<string>(nullable: true),
+                    Date = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -31,12 +29,12 @@ namespace Persistence.Migrations
                     Id = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Brand = table.Column<string>(nullable: true),
-                    calories = table.Column<double>(nullable: false),
-                    protein = table.Column<double>(nullable: false),
-                    fat = table.Column<double>(nullable: false),
-                    sugar = table.Column<double>(nullable: false),
-                    starch = table.Column<double>(nullable: false),
-                    fiber = table.Column<double>(nullable: false)
+                    calories = table.Column<float>(nullable: false),
+                    protein = table.Column<float>(nullable: false),
+                    fat = table.Column<float>(nullable: false),
+                    sugar = table.Column<float>(nullable: false),
+                    starch = table.Column<float>(nullable: false),
+                    fiber = table.Column<float>(nullable: false)
                 },
                 constraints: table =>
                 {

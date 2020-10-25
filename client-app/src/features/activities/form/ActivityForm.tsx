@@ -30,8 +30,6 @@ const ActivityForm: React.FC<RouteComponentProps<DetailsParams>> = ({
     category: "",
     description: "",
     date: "",
-    city: "",
-    venue: "",
   });
 
   useEffect(() => {
@@ -97,25 +95,6 @@ const ActivityForm: React.FC<RouteComponentProps<DetailsParams>> = ({
               onChange={handleInputChange}
               placeholder="Category"
               value={activity.category}
-            />
-            <Form.Input
-              name="date"
-              onChange={handleInputChange}
-              type="datetime-local"
-              placeholder="Date"
-              value={activity.date}
-            />
-            <Form.Input
-              name="city"
-              onChange={handleInputChange}
-              placeholder="City"
-              value={activity.city}
-            />
-            <Form.Input
-              name="venue"
-              onChange={handleInputChange}
-              placeholder="Venue"
-              value={activity.venue}
             />
             <Button
               loading={submitting}

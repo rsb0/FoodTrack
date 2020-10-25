@@ -6,8 +6,7 @@ import { RouteComponentProps } from "react-router";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
 import ActivityDetailedHeader from "./ActivityDetailedHeader";
 import ActivityDetailedInfo from "./ActivityDetailedInfo";
-import ActivityDetailedChat from "./ActivityDetailedChat";
-import ActivityDetailedSidebar from "./ActivityDetailedSidebar";
+import ActivityDetailedComment from "./ActivityDetailedComment";
 
 interface DetailParams {
   id: string;
@@ -29,13 +28,10 @@ const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
 
   return (
     <Grid>
-      <Grid.Column width={10}>
+      <Grid.Column width={8}>
         <ActivityDetailedHeader activity={activity}/>
         <ActivityDetailedInfo activity={activity} />
-        <ActivityDetailedChat />
-      </Grid.Column>
-      <Grid.Column width={6}>
-        <ActivityDetailedSidebar />
+        <ActivityDetailedComment />
       </Grid.Column>
     </Grid>
   );
