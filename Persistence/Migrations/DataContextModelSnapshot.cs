@@ -45,6 +45,41 @@ namespace Persistence.Migrations
                     b.ToTable("Activities");
                 });
 
+            modelBuilder.Entity("Domain.Food", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Brand")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<double>("calories")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("fat")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("fiber")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("protein")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("starch")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("sugar")
+                        .HasColumnType("REAL");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Foods");
+                });
+
             modelBuilder.Entity("Domain.Value", b =>
                 {
                     b.Property<int>("Id")

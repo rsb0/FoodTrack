@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {}
+    "/home/rune/src/FoodTrack/Persistence/Persistence.csproj": {}
   },
   "projects": {
-    "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
+    "/home/rune/src/FoodTrack/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
+        "projectUniqueName": "/home/rune/src/FoodTrack/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Reactivites\\Domain\\obj\\",
+        "projectPath": "/home/rune/src/FoodTrack/Domain/Domain.csproj",
+        "packagesPath": "/home/rune/.nuget/packages/",
+        "outputPath": "/home/rune/src/FoodTrack/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/rune/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -53,10 +53,6 @@
             {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -64,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\src\\Reactivites\\Persistence\\Persistence.csproj": {
+    "/home/rune/src/FoodTrack/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "/home/rune/src/FoodTrack/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\src\\Reactivites\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Reactivites\\Persistence\\obj\\",
+        "projectPath": "/home/rune/src/FoodTrack/Persistence/Persistence.csproj",
+        "packagesPath": "/home/rune/.nuget/packages/",
+        "outputPath": "/home/rune/src/FoodTrack/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/rune/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -89,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\src\\Reactivites\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj"
+              "/home/rune/src/FoodTrack/Domain/Domain.csproj": {
+                "projectPath": "/home/rune/src/FoodTrack/Domain/Domain.csproj"
               }
             }
           }
@@ -105,6 +101,10 @@
         "netcoreapp3.0": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.7, )"
             },
@@ -131,10 +131,6 @@
             {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -142,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }

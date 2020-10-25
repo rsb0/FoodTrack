@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Rune_\\.nuget\\packages\\": {}
+    "/home/rune/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
+      "projectUniqueName": "/home/rune/src/FoodTrack/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\src\\Reactivites\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Rune_\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\Reactivites\\Domain\\obj\\",
+      "projectPath": "/home/rune/src/FoodTrack/Domain/Domain.csproj",
+      "packagesPath": "/home/rune/.nuget/packages/",
+      "outputPath": "/home/rune/src/FoodTrack/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rune_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/rune/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -59,10 +59,6 @@
           {
             "name": "Microsoft.NETCore.App.Ref",
             "version": "[3.0.0, 3.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -70,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
       }
     }
   }

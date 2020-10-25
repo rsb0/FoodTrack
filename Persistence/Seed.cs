@@ -9,7 +9,7 @@ namespace Persistence
     {
         public static void SeedData(DataContext context)
         {
-            if( !context.Activities.Any() )
+            if (!context.Activities.Any())
             {
                 var activities = new List<Activity>
                 {
@@ -106,6 +106,26 @@ namespace Persistence
                 };
 
                 context.Activities.AddRange(activities);
+                context.SaveChanges();
+            };
+
+            if (!context.Foods.Any())
+            {
+                var foods = new List<Food>
+                {
+                    new Food
+                    {
+                        Name = "Oats",
+                        Brand = "AXA",
+                        calories = 370,
+                        protein = 12,
+                        fat = 7,
+                        sugar = 1.2,
+                        starch = 58.8,
+                        fiber = 8.5,
+                    }
+                };
+                context.Foods.AddRange(foods);
                 context.SaveChanges();
             };
         }
