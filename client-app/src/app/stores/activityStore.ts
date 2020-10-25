@@ -1,5 +1,4 @@
 import { IActivity } from "../models/activity";
-import {IFood} from "../models/food";
 import { observable, action, computed, configure, runInAction } from "mobx";
 import { createContext, SyntheticEvent } from "react";
 import agent from "../api/agent";
@@ -10,8 +9,6 @@ class ActivityStore {
   @observable activityRegistry = new Map();
   @observable activities: IActivity[] = [];
   @observable activity: IActivity | null = null;
-  @observable foods: IFood[] = [];
-  @observable food: IFood | null = null;
   @observable loadingInitial = false;
   @observable submitting = false;
   @observable buttonTarget = "";
@@ -50,24 +47,6 @@ class ActivityStore {
       console.log(this.groupActivitiesByDate(activities));
     } catch (error) {
       runInAction("loading activities error", () => {
-        this.loadingInitial = false;
-      });
-      console.log(error);
-    }
-  };
-
-  @action loadFoods = async () => {
-    this.loadingInitial = true;
-    try {
-      const foods = await agent.Foods.list();
-      runInAction("loading foods", () => {
-        foods.forEach((food) => {
-          this.foods.push(food);
-        });
-        this.loadingInitial = false;
-      });
-    } catch (error) {
-      runInAction("Loading foods error", () => {
         this.loadingInitial = false;
       });
       console.log(error);
