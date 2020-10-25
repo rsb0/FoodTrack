@@ -1,12 +1,13 @@
 import { IFood } from "../models/food";
 import { observable, action, runInAction } from "mobx";
-import { createContext } from 'react';
+import { createContext, SyntheticEvent } from 'react';
 import agent from "../api/agent";
 
 class FoodStore {
     @observable foods: IFood[] = [];
     @observable food: IFood | null = null;
     @observable loadingInitial = false;
+    @observable submitting = false;
     @observable foodRegistry = new Map();
 
     @action loadFoods = async () => {
@@ -41,7 +42,7 @@ class FoodStore {
                     this.loadingInitial = false;
                 });
             } catch (error) {
-                runInAction("getting food", () => {
+                runInAction("getting food error", () => {
                     this.loadingInitial = false;
                 });
                 console.log(error);
@@ -51,8 +52,44 @@ class FoodStore {
 
     getFood = (id: string) => {
         return this.foodRegistry.get(id);
-    }
+    };
 
+    @action clearFood = () => {
+        this.food = null;
+    };
+
+    @action createFood = async (food: IFood) => {
+        this.submitting = true;
+        try {
+            await agent.Foods.create(food);
+            runInAction("creatign food", () => {
+                this.foodRegistry.set(food.id, food);
+                this.submitting = false;
+            });
+        } catch (error) {
+            runInAction("create food error", () => {
+                this.submitting = false;
+            });
+            console.log(error);
+        }
+    };
+
+    @action editFood = async (food: IFood) => {
+        this.submitting = true;
+        try {
+          await agent.Foods.update(food);
+          runInAction("editing food", () => {
+            this.foodRegistry.set(food.id, food);
+            this.food = food;
+            this.submitting = false;
+          });
+        } catch (error) {
+          runInAction("editing food error", () => {
+            this.submitting = false;
+          });
+          console.log(error);
+        }
+      };
     
 }
 
