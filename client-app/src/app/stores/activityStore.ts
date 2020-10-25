@@ -56,6 +56,23 @@ class ActivityStore {
     }
   };
 
+  @action loadFoods = async () => {
+    this.loadingInitial = true;
+    try {
+      const foods = await agent.Foods.list();
+      runInAction("loading foods", () => {
+        foods.forEach((food) => {
+          this.foods.push(food);
+        });
+        this.loadingInitial = false;
+      });
+    } catch (error) {
+      runInAction("Loading foods error", () => {
+        this.loadingInitial = false;
+      });
+      console.log(error);
+    }
+  };
 
 
   @action loadActivity = async (id: string) => {
