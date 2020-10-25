@@ -26,6 +26,9 @@ namespace Application.Foods
                 {
                     var food = await _context.Foods.FindAsync(request.Id);
 
+                    if (food == null)
+                        throw new RestException(HttpStatusCode.NotFound, new { food = "Not found" });
+
                     return food;
                 }
             }

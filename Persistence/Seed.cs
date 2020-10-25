@@ -117,12 +117,12 @@ namespace Persistence
                     {
                         Name = "Oats",
                         Brand = "AXA",
-                        calories = 370,
-                        protein = 12,
-                        fat = 7,
-                        sugar = 1.2,
-                        starch = 58.8,
-                        fiber = 8.5,
+                        calories = 370F,
+                        protein = 12F,
+                        fat = 7F,
+                        sugar = 1.2F,
+                        starch = 58.8F,
+                        fiber = 8.5F,
                     }
                 };
                 context.Foods.AddRange(foods);

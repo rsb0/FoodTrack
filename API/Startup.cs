@@ -42,7 +42,8 @@ namespace API
             services.AddControllers()
                 .AddFluentValidation(cfg =>
                 {
-                    cfg.RegisterValidatorsFromAssemblyContaining<Create>();
+                    cfg.RegisterValidatorsFromAssemblyContaining<Application.Activities.Create>();
+                    cfg.RegisterValidatorsFromAssemblyContaining<Application.Foods.Create>();
                 });
         }
 

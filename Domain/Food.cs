@@ -7,12 +7,12 @@ namespace Domain
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Brand { get; set; }
-        public double calories { get; set; }
-        public double protein { get; set; }
-        public double fat { get; set; }
-        public double sugar { get; set; }
-        public double starch { get; set; }
-        public double fiber { get; set; }
+        public float calories { get; set; }
+        public float protein { get; set; }
+        public float fat { get; set; }
+        public float sugar { get; set; }
+        public float starch { get; set; }
+        public float fiber { get; set; }
     }
 
 }
