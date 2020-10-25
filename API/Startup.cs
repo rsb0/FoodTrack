@@ -1,5 +1,6 @@
 using API.Middleware;
 using Application.Activities;
+using Application.Foods;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -24,11 +25,11 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(opt => 
+            services.AddDbContext<DataContext>(opt =>
             {
                 opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
             });
-            services.AddCors(opt => 
+            services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
@@ -36,9 +37,10 @@ namespace API
                 });
             });
 
-            services.AddMediatR(typeof(List.Handler).Assembly);
+            services.AddMediatR(typeof(Application.Activities.List.Handler).Assembly);
+            services.AddMediatR(typeof(Application.Foods.List.Handler).Assembly);
             services.AddControllers()
-                .AddFluentValidation(cfg => 
+                .AddFluentValidation(cfg =>
                 {
                     cfg.RegisterValidatorsFromAssemblyContaining<Create>();
                 });
