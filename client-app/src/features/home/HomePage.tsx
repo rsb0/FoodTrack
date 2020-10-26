@@ -18,6 +18,9 @@ const HomePage = () => {
         <Button as={Link} to="/activities" size="huge" inverted icon="">
           Training
         </Button>
+        <Button as={Link} to="/foods" size="huge" inverted icon="">
+          Foods
+        </Button>
       </Container>
     </Segment>
   );

@@ -8,6 +8,7 @@ import HomePage from "../../features/home/HomePage";
 import ActivityForm from "../../features/activities/form/ActivityForm";
 import ActivityDetails from "../../features/activities/details/ActivityDetails";
 import FoodDashboard from "../../features/foods/dashboard/FoodDashboard";
+import FoodForm from "../../features/foods/form/FoodForm";
 import "./styles.css";
 
 const App: React.FC<RouteComponentProps> = ({ location }) => {
@@ -28,6 +29,11 @@ const App: React.FC<RouteComponentProps> = ({ location }) => {
                 component={ActivityForm}
               />
               <Route exact path="/foods" component={FoodDashboard} />
+              <Route
+                key={location.key}
+                path={["/createfood", "/manage/:id"]}
+                component={FoodForm}
+              />
             </>
           )}
         />

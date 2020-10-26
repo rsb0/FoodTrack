@@ -23,7 +23,7 @@ const FoodListItem: React.FC<{ food: IFood }> = ({ food }) => {
             color="textPrimary"
             gutterBottom
           >
-            {food.name} {food.brand}
+            {food.name} | {food.brand}
           </Typography>
           <Typography variant="body2" component="p">
             calories: {food.calories}
@@ -45,7 +45,7 @@ const FoodListItem: React.FC<{ food: IFood }> = ({ food }) => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Learn More</Button>
+          <Button size="small">Button</Button>
         </CardActions>
       </CardActionArea>
     </Card>
