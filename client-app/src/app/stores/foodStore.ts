@@ -1,6 +1,6 @@
 import { IFood } from "../models/food";
 import { observable, action, runInAction, computed } from "mobx";
-import { createContext, SyntheticEvent } from 'react';
+import { createContext } from 'react';
 import agent from "../api/agent";
 
 class FoodStore {

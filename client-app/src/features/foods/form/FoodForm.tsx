@@ -48,7 +48,7 @@ const FoodForm: React.FC<RouteComponentProps<{ id: string }>> = ({
         ...food,
         id: uuid(),
       };
-      createFood(newFood).then(() => history.push(`/foods/${newFood.id}`));
+      createFood(newFood).then(() => history.push(`/foods`));
     }
   };
 
@@ -56,7 +56,7 @@ const FoodForm: React.FC<RouteComponentProps<{ id: string }>> = ({
     event: FormEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = event.currentTarget;
-    if (name == "name" || name == "brand") {
+    if (name === "name" || name === "brand") {
       setFood({ ...food, [name]: value });
     } else {
       setFood({ ...food, [name]: parseFloat(value) });

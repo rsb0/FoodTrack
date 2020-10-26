@@ -24,7 +24,6 @@ const App: React.FC<RouteComponentProps> = ({ location }) => {
               <Route exact path="/activities" component={ActivityDashboard} />
               <Route path="/activities/:id" component={ActivityDetails} />
               <Route
-                key={location.key}
                 path={["/createactivity", "/manage/:id"]}
                 component={ActivityForm}
               />

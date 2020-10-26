@@ -4,10 +4,9 @@ import {
   Button,
   Icon,
   Item,
-  Label,
   Segment,
   SegmentGroup,
-  Header
+  Header,
 } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
 
