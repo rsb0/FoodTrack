@@ -1,0 +1,13 @@
+.foodListGridItem {
+    display: flex;
+}
+
+.foodDashboardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.foodCard {
+    margin: 5% 30% 5% 30%;
+    min-width: 450px;
+}

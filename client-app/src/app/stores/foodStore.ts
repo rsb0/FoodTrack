@@ -1,5 +1,5 @@
 import { IFood } from "../models/food";
-import { observable, action, runInAction } from "mobx";
+import { observable, action, runInAction, computed } from "mobx";
 import { createContext, SyntheticEvent } from 'react';
 import agent from "../api/agent";
 
@@ -9,6 +9,17 @@ class FoodStore {
     @observable loadingInitial = false;
     @observable submitting = false;
     @observable foodRegistry = new Map();
+
+    @computed get foodsAlphabetically() {
+        return this.sortFoodsAlphabetically(
+            Array.from(this.foodRegistry.values())
+        );
+    }
+
+    sortFoodsAlphabetically(foods: IFood[]) {
+        const sortedFoods = foods.sort((a, b) => a.name.localeCompare(b.name))
+        return sortedFoods;
+    }
 
     @action loadFoods = async () => {
         this.loadingInitial = true;

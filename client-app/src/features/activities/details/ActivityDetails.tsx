@@ -14,7 +14,7 @@ interface DetailParams {
 
 // comments
 const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
-  match
+  match,
 }) => {
   const activityStore = useContext(ActivityStore);
   const { activity, loadActivity, loadingInitial } = activityStore;
@@ -29,7 +29,7 @@ const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
   return (
     <Grid>
       <Grid.Column width={8}>
-        <ActivityDetailedHeader activity={activity}/>
+        <ActivityDetailedHeader activity={activity} />
         <ActivityDetailedInfo activity={activity} />
         <ActivityDetailedComment />
       </Grid.Column>

@@ -13,7 +13,7 @@ class ActivityStore {
   @observable submitting = false;
   @observable buttonTarget = "";
 
-  // computed properties are used when we already have the data inside the
+  // computed properties are used when the data is already inside the
   // store and know what the result should be based on the data in the store.
   // Returns array of activities sorted by date
   @computed get activitiesByDate() {
