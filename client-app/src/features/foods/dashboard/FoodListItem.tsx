@@ -9,17 +9,13 @@ import Typography from "@material-ui/core/Typography";
 import { IFood } from "../../../app/models/food";
 import "../styles/foodStyles.css";
 import { CardActionArea } from "@material-ui/core";
-import "../../../assets/logo.png";
+import imageURL from "../../../assets/categoryImages/oats.jpeg";
 
 const FoodListItem: React.FC<{ food: IFood }> = ({ food }) => {
   return (
     <Card className="foodCard" variant="outlined">
       <CardActionArea>
-        <CardMedia
-          className="foodCardImage"
-          image={require("../../../assets/categoryImages/culture.jpg")}
-          title="Contemplative Reptile"
-        />
+        <CardMedia src={imageURL} component="img" title="Title" />
         <CardContent>
           <Typography
             className="FoodTitle"
