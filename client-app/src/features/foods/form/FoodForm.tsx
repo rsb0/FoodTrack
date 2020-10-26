@@ -82,7 +82,6 @@ const FoodForm: React.FC<RouteComponentProps<{ id: string }>> = ({
             />
             <Form.Input
               name="calories"
-              type="number"
               onChange={handleInputChange}
               label="Calories"
               value={food.calories}
